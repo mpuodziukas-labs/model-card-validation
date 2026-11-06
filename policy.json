@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-11-05",
+  "stale_days": 90,
+  "floors": {
+    "accuracy": 0.85,
+    "recall": 0.80
+  },
+  "max_dev_heldout_gap": 0.05,
+  "verdict_rules": [
+    {"verdict": "REJECT", "any_of": ["below_floor"]},
+    {"verdict": "APPROVE_WITH_CONDITIONS", "any_of": ["wilson_lower_below_floor", "gap_exceeded", "no_heldout", "no_floor"]},
+    {"verdict": "APPROVE", "any_of": []}
+  ],
+  "limitation_notes": [
+    "This report reads receipts only and no model was re-run.",
+    "All data in this repository is synthetic.",
+    "The headings follow SR 11-7 and the report is not a regulatory attestation."
+  ]
+}

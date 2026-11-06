@@ -1,0 +1,7 @@
+dataset_id,path,sha256,rows,source,split
+DS-A-DEV,datasets/ds_a_dev.csv,19e208b6668536c46ac75d4cba224b63e8a52d03547a999fa02a5f5f02503ff5,400,"synthetic seeded generator, no real records",dev
+DS-A-HELD,datasets/ds_a_heldout.csv,5a5acc8da082afc84f087e2337c9a05b3f3bccd09b70b664694ffe0219695ec1,300,"synthetic seeded generator, no real records",heldout
+DS-B-DEV,datasets/ds_b_dev.csv,70e3b55c5933c183977af831efa028c8b1c1369cbfadacf274f039f9b72f1018,400,"synthetic seeded generator, no real records",dev
+DS-B-HELD,datasets/ds_b_heldout.csv,82e31113f57c2650a1a4fed8af10bcfb1b120c4909b84ca4966cbceab6d7280f,300,"synthetic seeded generator, no real records",heldout
+DS-C-DEV,datasets/ds_c_dev.csv,ef3aae4e6c9d7683c5ca11781b347717c5dfc33b1ddbab1587a5ed98c77c297e,400,"synthetic seeded generator, no real records",dev
+DS-C-HELD,datasets/ds_c_heldout.csv,8b406147772a40736f30d8190c6ffc55b7c68b609d169d37bf44fb14a68a9a41,300,"synthetic seeded generator, no real records",heldout

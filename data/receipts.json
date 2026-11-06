@@ -1,0 +1,181 @@
+{
+  "synthetic": true,
+  "ci_confidence": 0.95,
+  "systems": [
+    {
+      "system_id": "SYN-A",
+      "name": "Ticket router A",
+      "label": "SYNTHETIC",
+      "intended_use": "Route synthetic support tickets to one of two queues for human triage.",
+      "out_of_scope": [
+        "Any decision about a real person.",
+        "Use on data that is not synthetic.",
+        "Fully automatic routing with no human review."
+      ],
+      "known_limitations": [
+        "Evaluated on seeded synthetic data only.",
+        "Recall is measured on the positive class only."
+      ],
+      "human_oversight": "A named reviewer inspects a sample of routed tickets each week and can switch the router off.",
+      "design_rationale": "A single threshold classifier was chosen as the simplest baseline that can be audited.",
+      "receipts": [
+        {
+          "receipt_id": "RC-A-01",
+          "metric": "accuracy",
+          "split": "dev",
+          "dataset_id": "DS-A-DEV",
+          "k": 368,
+          "n": 400,
+          "stated_rate": 0.92,
+          "evaluated_on": "2026-10-20"
+        },
+        {
+          "receipt_id": "RC-A-02",
+          "metric": "recall",
+          "split": "dev",
+          "dataset_id": "DS-A-DEV",
+          "k": 180,
+          "n": 200,
+          "stated_rate": 0.9,
+          "evaluated_on": "2026-10-20"
+        },
+        {
+          "receipt_id": "RC-A-03",
+          "metric": "accuracy",
+          "split": "heldout",
+          "dataset_id": "DS-A-HELD",
+          "k": 272,
+          "n": 300,
+          "stated_rate": 0.91,
+          "evaluated_on": "2026-10-28"
+        },
+        {
+          "receipt_id": "RC-A-04",
+          "metric": "recall",
+          "split": "heldout",
+          "dataset_id": "DS-A-HELD",
+          "k": 135,
+          "n": 150,
+          "stated_rate": 0.9,
+          "evaluated_on": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "system_id": "SYN-B",
+      "name": "Ticket router B",
+      "label": "SYNTHETIC",
+      "intended_use": "Route synthetic support tickets to one of two queues for human triage.",
+      "out_of_scope": [
+        "Any decision about a real person.",
+        "Use on data that is not synthetic.",
+        "Fully automatic routing with no human review."
+      ],
+      "known_limitations": [
+        "Evaluated on seeded synthetic data only.",
+        "Recall is measured on the positive class only."
+      ],
+      "human_oversight": "A named reviewer inspects a sample of routed tickets each week and can switch the router off.",
+      "design_rationale": "A single threshold classifier was chosen as the simplest baseline that can be audited.",
+      "receipts": [
+        {
+          "receipt_id": "RC-B-01",
+          "metric": "accuracy",
+          "split": "dev",
+          "dataset_id": "DS-B-DEV",
+          "k": 368,
+          "n": 400,
+          "stated_rate": 0.92,
+          "evaluated_on": "2026-06-01"
+        },
+        {
+          "receipt_id": "RC-B-02",
+          "metric": "recall",
+          "split": "dev",
+          "dataset_id": "DS-B-DEV",
+          "k": 180,
+          "n": 200,
+          "stated_rate": 0.9,
+          "evaluated_on": "2026-10-20"
+        },
+        {
+          "receipt_id": "RC-B-03",
+          "metric": "accuracy",
+          "split": "heldout",
+          "dataset_id": "DS-B-HELD",
+          "k": 272,
+          "n": 300,
+          "stated_rate": 0.91,
+          "evaluated_on": "2026-10-28"
+        },
+        {
+          "receipt_id": "RC-B-04",
+          "metric": "recall",
+          "split": "heldout",
+          "k": 135,
+          "n": 150,
+          "stated_rate": 0.9,
+          "evaluated_on": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "system_id": "SYN-C",
+      "name": "Ticket router C",
+      "label": "SYNTHETIC",
+      "intended_use": "Route synthetic support tickets to one of two queues for human triage.",
+      "out_of_scope": [
+        "Any decision about a real person.",
+        "Use on data that is not synthetic.",
+        "Fully automatic routing with no human review."
+      ],
+      "known_limitations": [
+        "Evaluated on seeded synthetic data only.",
+        "Recall is measured on the positive class only."
+      ],
+      "human_oversight": "A named reviewer inspects a sample of routed tickets each week and can switch the router off.",
+      "receipts": [
+        {
+          "receipt_id": "RC-C-01",
+          "metric": "accuracy",
+          "split": "dev",
+          "dataset_id": "DS-C-DEV",
+          "k": 352,
+          "n": 400,
+          "stated_rate": 0.88,
+          "evaluated_on": "2026-10-20"
+        },
+        {
+          "receipt_id": "RC-C-02",
+          "metric": "recall",
+          "split": "dev",
+          "dataset_id": "DS-C-DEV",
+          "k": 176,
+          "n": 200,
+          "stated_rate": 0.88,
+          "evaluated_on": "2026-10-20"
+        },
+        {
+          "receipt_id": "RC-C-03",
+          "metric": "accuracy",
+          "split": "heldout",
+          "dataset_id": "DS-C-HELD",
+          "k": 260,
+          "n": 300,
+          "stated_rate": 0.87,
+          "evaluated_on": "2026-10-28"
+        },
+        {
+          "receipt_id": "RC-C-04",
+          "metric": "recall",
+          "split": "heldout",
+          "dataset_id": "DS-C-HELD",
+          "k": 101,
+          "n": 140,
+          "stated_rate": 0.72,
+          "evaluated_on": "2026-10-28"
+        }
+      ]
+    }
+  ]
+}
